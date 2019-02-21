@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  },
+  "extends": ["react-app", "pluggin:prettier:recommended"]
+}
