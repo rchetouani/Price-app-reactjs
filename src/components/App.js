@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import HeroBlock from "../components/common/HeroBlock";
 import PriceCard from "../components/common/PriceCard";
 
-import prices from "./mocksprice/price";
+import prices from "../mocksprice/price";
 
 class App extends Component {
   render() {

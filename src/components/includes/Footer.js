@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import logo from "./bootstrap-solid.svg";
-import footer from "../mocksprice/footer";
+import footer from "../../mocksprice/footer";
+
 const footertitle = footer.map(item => item.title);
 
 const values = footer.map(item => item.values);
-console.log("values", values);
 const value = values.map(item => item.map(item => item.name));
-console.log("value :", value);
 
 class Footer extends Component {
   render() {
@@ -22,32 +21,32 @@ class Footer extends Component {
             <ul className="list-unstyled text-small">
               <li>
                 <a className="text-muted" href=" ">
-                  sdfds {value[0]}
+                  {value[0][0]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[0].values[1].name}
+                  {value[0][1]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[0].values[2].name}
+                  {value[0][2]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[0].values[3].name}
+                  {value[0][3]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[0].values[4].name}
+                  {value[0][4]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[0].values[5].name}
+                  {value[0][5]}
                 </a>
               </li>
             </ul>
@@ -57,22 +56,22 @@ class Footer extends Component {
             <ul className="list-unstyled text-small">
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[1].values[0].name}
+                  {value[1][0]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[1].values[1].name}
+                  {value[1][1]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[1].values[2].name}
+                  {value[1][2]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[1].values[3].name}
+                  {value[1][3]}
                 </a>
               </li>
             </ul>
@@ -82,22 +81,22 @@ class Footer extends Component {
             <ul className="list-unstyled text-small">
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[2].values[0].name}
+                  {value[2][0]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[2].values[1].name}
+                  {value[2][1]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[2].values[2].name}
+                  {value[2][2]}
                 </a>
               </li>
               <li>
                 <a className="text-muted" href=" ">
-                  {footer[2].values[3].name}
+                  {value[2][3]}
                 </a>
               </li>
             </ul>
